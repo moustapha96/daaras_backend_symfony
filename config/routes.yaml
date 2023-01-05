@@ -1,0 +1,37 @@
+controllers:
+    resource: ../src/Controller/
+    type: annotation
+
+kernel:
+    resource: ../src/Kernel.php
+    type: annotation
+    
+authentication_token:
+    path: /authentication_token
+    methods: ['POST']
+
+api_me:
+    path: '/api/me'
+    methods: ['GET']
+    defaults:
+        _controller: '\App\Controller\MyUserController::fn_me'
+        _api_resource_class: 'App\Entity\User'
+        _api_collection_operation_name: 'collName_api_me'
+
+api_mes_laiteries:
+    path: '/api/mes_laiteries'
+    methods: ['GET']
+    defaults:
+        _controller: '\App\Controller\MyUserController::fn_mesLaiteries'
+        _api_resource_class: 'App\Entity\User'
+        _api_collection_operation_name: 'collName_api_mes_laiteries'
+
+
+        
+api_find_user_email:
+    path: '/api/findUserEmail'
+    methods: ['GET','POST']
+    defaults:
+        _controller: '\App\Controller\MyUserController::find_user_email'
+        _api_resource_class: 'App\Entity\UserMobile'
+

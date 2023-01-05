@@ -1,0 +1,9 @@
+parameters:
+    database_host: 127.0.0.1
+    database_port: 8889
+    database_name: daaras
+    database_user: root
+    database_password: root
+
+services:
+    # ... some services

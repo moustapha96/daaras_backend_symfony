@@ -1,0 +1,15 @@
+<h1>Ouvertude de Compte </h1>
+<br>
+<h3>Bonjour </h3> Un utilisateur du nom de  {{ user.firstname}}  {{ user.lastname }}  vient d'ouvrir un compte sur la platforme </u>
+<br>
+
+<p  class="text-center" >
+   Les details du compte  :
+    <h5> Prenom Nom    =>  <u>  {{ user.firstname }}  {{ user.lastname }} </u> </h5>
+    <h5> Email  =>   {{ user.email }}  </h5>
+    <h5> Tel =>  {{ user.phone }}  </h5>
+    {# <h4> date de Cretaion    <u>  {{ user.lastActivityAt  |format_datetime('none', 'short', locale='fr') }} </u> </h4> #}
+</p>
+
+
+<h4  class="text-center" >Merci de valider le compte via la platforme </h4>

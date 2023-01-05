@@ -1,0 +1,10 @@
+
+
+<h1>Bonjour </h1><br><br>Une demande de
+réinitialisation de mot de passe a été effectuée pour le site simlait.pdeps.sn
+<br><br>
+<p>Pour réinitialiser votre mot de passe, veuillez cliquer sur le lien suivant :
+    <a href="{{ url('app_reset_password', {token: resetToken.token}) }}">{{ url('app_reset_password', {token: resetToken.token}) }}</a>
+</p>
+
+<p>Ce lien expirera dans {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle')}}.</p>

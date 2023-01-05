@@ -1,0 +1,15 @@
+<h1>Bonjour
+</h1><br><br>Une demande de
+réinitialisation de mot de passe a été effectuée pour le site recensement.daaras.sn
+<br><br>
+<p>Pour réinitialiser votre mot de passe, veuillez cliquer sur le lien suivant :
+	<a href="{{url}}">
+		{{ url }}
+	</a>
+</p>
+<p>
+	validité :
+	{{time }}
+</p>
+<p>Ce lien expirera dans
+	{{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle')}}.</p>

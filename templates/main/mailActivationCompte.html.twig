@@ -1,0 +1,20 @@
+
+<h1>Etat de votre Compte
+</h1></br><b>
+<h3>Bonjour
+</h3>
+{{ user.email}}
+{{ user.lastname }}
+<b>
+	Votre compte  est
+	{% if user.enabled == true %} ACTIVÉ </br> 	Vous pouvez à présent vous connecter sur la platforme {% endif %}
+	{% if user.enabled == false %} DESACTIVÉ </br> 	Vous pouvez contactez l'administrateur pour plus d'informations {% endif %}
+</b>
+
+</br>
+
+<h4>Votre Identifiant est :<u>{{user.email }}</u></h4>
+
+Pour toute informations suplémentaire , vous pouvez contacter l'administrateur</br>
+
+Merci !!

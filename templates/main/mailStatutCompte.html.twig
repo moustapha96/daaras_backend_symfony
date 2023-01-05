@@ -1,0 +1,17 @@
+<h1>Statut de votre Compte
+</h1>
+</br>
+<b>
+<h3>Bonjour </h3>
+{{ user.email}}
+{{ user.lastname }}
+<b>
+	Votre compte  est
+
+<b> {% if user.status == 'ACTIVE' %} est ACTIVÉ  </br> Merci d'attendre l'activation de votre compte pour vous connecter{% endif %}</b>
+
+<b> {% if user.status == 'EN_ATTENTE' %} en ATTENTE d'activation </br> Merci d'attendre l'activation de votre compte pour vous connecter{% endif %}</b>
+
+<b>{% if user.status == 'BLOCKE' %} BLOCKÉ</br>Merci de contacter l'adminstrateur de la plateorme pour plus d'informations{% endif %}</b></br>
+
+<h4>Votre Identifiant est :<u>{{user.email }}</u></h4>Pour toute informations suplémentaire , vous pouvez contacter l'administrateur</br>Merci !!
